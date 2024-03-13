@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my news website </title>
+    <link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-bar flex container">
+            <a class="company-logo" onclick="reload()" href="#">
+                <img src="assets/news1.jpg" alt="no">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+                    <li class="hover-link nav-item" id="Politics" onclick="onNavItemClick('Politics')">Politics</li>
+                    <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')" >Finance</li>
+            
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input type="text" class="news-input" id="search-Text" placeholder="Technology">
+                <button id="search-button" class="search-button">search here</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main section -->
+    
+    <main>
+        <div class="card-container container flex" id="cards-container">
+
+
+        </div>
+    </main>
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">this the title </h3>
+                <h5 class="news-source" id="news-source">End Gadget 26/09/2023</h5>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque similique quam in, iure soluta delectus est aliquam voluptates sapiente eligendi.</p>
+            </div>
+        </div>
+
+    </template>
+    <script src="script.js"></script>
+</body>
+</html>
